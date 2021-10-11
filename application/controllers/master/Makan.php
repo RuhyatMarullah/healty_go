@@ -49,9 +49,10 @@ class Makan extends CI_Controller
             $img = $_FILES['img']['name'];
             if ($img) {
                 $config['upload_path'] = './assets/img/profile';
-                $config['allowed_types'] = 'gif|jpg|png';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
                 $config['max_size']     = '10000';
                 $this->load->library('upload', $config);
+                // $this->upload->initialize($config);
                 if ($this->upload->do_upload('img')) {
                     $new_img = $this->upload->data('file_name');
                     $this->Makan_model->tambahMakan($new_img);

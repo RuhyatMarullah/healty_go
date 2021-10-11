@@ -22,11 +22,11 @@
                 </div>
                 <div class="form-group">
                     <label for="berat_badan">Berat Badan (kg)</label>
-                    <input type="number" id="berat_badan" class="form-control" name="berat_badan" required>
+                    <input type="text" id="berat_badan" class="form-control" name="berat_badan" required>
                 </div>
                 <div class="form-group">
                     <label for="tinggi_badan">Tinggi Badan (cm)</label>
-                    <input type="number" id="tinggi_badan" class="form-control" name="tinggi_badan" required>
+                    <input type="text" id="tinggi_badan" class="form-control" name="tinggi_badan" required>
                 </div>
             </div>
             <div class="col-md-6">

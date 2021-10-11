@@ -65,14 +65,13 @@
                                 <h4>Kalori (kkal)</h4>
                                 <p>Kebutuhan anda terpenuhi %</p>
                             </td>
-                            <td>
+                            <td width="30%">
                                 <br>
-                                <h5><?= $kalori; ?></h5>
+                                <h5><?= round($p_kalori, 2); ?></h5>
                             </td>
-                            <td>
+                            <td width="30%">
                                 <br>
-
-                                <h5><?= $p_kalori; ?></h5>
+                                <h5><?= round($kalori, 2); ?></h5>
                             </td>
                         </tr>
                         <tr>
@@ -82,12 +81,14 @@
                             </td>
                             <td>
                                 <br>
-                                <h5><?= $protein; ?></h5>
+                                <h5><?= round($p_protein, 2);
+                                    ?></h5>
                             </td>
                             <td>
                                 <br>
 
-                                <h5><?= $p_protein; ?></h5>
+                                <h5><?= round($protein, 2);
+                                    ?></h5>
                             </td>
                         </tr>
                         <tr>
@@ -97,12 +98,12 @@
                             </td>
                             <td>
                                 <br>
-                                <h5><?= $lemak; ?></h5>
+                                <h5><?= round($p_lemak, 2); ?></h5>
                             </td>
                             <td>
                                 <br>
 
-                                <h5><?= $p_lemak; ?></h5>
+                                <h5><?= round($lemak, 2); ?></h5>
                             </td>
                         </tr>
                         <tr>
@@ -112,12 +113,12 @@
                             </td>
                             <td>
                                 <br>
-                                <h5><?= $karbohidrat; ?></h5>
+                                <h5><?= round($p_karbohidrat, 2); ?></h5>
                             </td>
                             <td>
                                 <br>
 
-                                <h5><?= $p_karbohidrat; ?></h5>
+                                <h5><?= round($karbohidrat, 2); ?></h5>
                             </td>
                         </tr>
                     </table>

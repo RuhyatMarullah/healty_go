@@ -13,7 +13,24 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title"><?= $user['nama']; ?></h5>
+                            <table width="100%">
+                                <tr>
+                                    <th width="30%">
+                                        Nama
+                                    </th>
+                                    <td>
+                                        : <?= $user['nama']; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">
+                                        Email
+                                    </th>
+                                    <td>
+                                        : <?= $user['email']; ?>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>

@@ -39,7 +39,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="karbo">Karbo</label>
-                    <input required type="number" id="karbo" class="form-control <?php if (form_error('karbo')) { ?>
+                    <input required type="text" id="karbo" class="form-control <?php if (form_error('karbo')) { ?>
                         is-invalid
                     <?php  } ?>" name="karbo" value="<?= set_value('karbo'); ?>">
                     <?= form_error('karbo', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -48,7 +48,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="protein">Protein</label>
-                    <input required type="number" id="protein" class="form-control <?php if (form_error('protein')) { ?>
+                    <input required type="text" id="protein" class="form-control <?php if (form_error('protein')) { ?>
                         is-invalid
                     <?php  } ?>" name="protein" value="<?= set_value('protein'); ?>">
                     <?= form_error('protein', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -57,7 +57,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="lemak">Lemak</label>
-                    <input required type="number" id="lemak" class="form-control <?php if (form_error('lemak')) { ?>
+                    <input required type="text" id="lemak" class="form-control <?php if (form_error('lemak')) { ?>
                         is-invalid
                     <?php  } ?>" name="lemak" value="<?= set_value('lemak'); ?>">
                     <?= form_error('lemak', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -66,7 +66,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="kalori">Kalori</label>
-                    <input required type="number" id="kalori" class="form-control <?php if (form_error('kalori')) { ?>
+                    <input required type="text" id="kalori" class="form-control <?php if (form_error('kalori')) { ?>
                         is-invalid
                     <?php  } ?>" name="kalori" value="<?= set_value('kalori'); ?>">
                     <?= form_error('kalori', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -75,7 +75,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="berat">Berat</label>
-                    <input required type="number" id="berat" class="form-control <?php if (form_error('berat')) { ?>
+                    <input required type="text" id="berat" class="form-control <?php if (form_error('berat')) { ?>
                         is-invalid
                     <?php  } ?>" name="berat" value="<?= set_value('berat'); ?>">
                     <?= form_error('berat', '<small class="text-danger pl-1">', '</small>'); ?>

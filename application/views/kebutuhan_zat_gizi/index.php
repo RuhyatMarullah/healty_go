@@ -24,19 +24,19 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="berat_badan">Berat Badan (kg)</label>
-                    <input type="number" id="berat_badan" class="form-control" name="berat_badan" value="" required>
+                    <input type="text" id="berat_badan" class="form-control" name="berat_badan" value="" required>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="usia">Usia</label>
-                    <input type="number" required id="usia" class="form-control" name="usia" value="">
+                    <input type="text" required id="usia" class="form-control" name="usia" value="">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="tinggi_badan">Tinggi Badan (cm)</label>
-                    <input type="number" required id="tinggi_badan" class="form-control" name="tinggi_badan" value="">
+                    <input type="text" required id="tinggi_badan" class="form-control" name="tinggi_badan" value="">
                 </div>
             </div>
             <div class="col-md-12">

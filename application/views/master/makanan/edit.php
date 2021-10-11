@@ -40,7 +40,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="karbo">Karbo</label>
-                    <input type="number" required id="karbo" class="form-control <?php if (form_error('karbo')) { ?>
+                    <input type="text" required id="karbo" class="form-control <?php if (form_error('karbo')) { ?>
                         is-invalid
                     <?php  } ?>" name="karbo" value="<?= $makan['karbo']; ?>">
                     <?= form_error('karbo', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -49,7 +49,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="protein">Protein</label>
-                    <input type="number" required id="protein" class="form-control <?php if (form_error('protein')) { ?>
+                    <input type="text" required id="protein" class="form-control <?php if (form_error('protein')) { ?>
                         is-invalid
                     <?php  } ?>" name="protein" value="<?= $makan['karbo']; ?>">
                     <?= form_error('protein', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -58,7 +58,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="lemak">Lemak</label>
-                    <input type="number" required id="lemak" class="form-control <?php if (form_error('lemak')) { ?>
+                    <input type="text" required id="lemak" class="form-control <?php if (form_error('lemak')) { ?>
                         is-invalid
                     <?php  } ?>" name="lemak" value="<?= $makan['lemak']; ?>">
                     <?= form_error('lemak', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -67,7 +67,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="kalori">Kalori</label>
-                    <input type="number" required id="kalori" class="form-control <?php if (form_error('kalori')) { ?>
+                    <input type="text" required id="kalori" class="form-control <?php if (form_error('kalori')) { ?>
                         is-invalid
                     <?php  } ?>" name="kalori" value="<?= $makan['kalori']; ?>">
                     <?= form_error('kalori', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -76,7 +76,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="berat">Berat</label>
-                    <input type="number" required id="berat" class="form-control <?php if (form_error('berat')) { ?>
+                    <input type="text" required id="berat" class="form-control <?php if (form_error('berat')) { ?>
                         is-invalid
                     <?php  } ?>" name="berat" value="<?= $makan['berat']; ?>">
                     <?= form_error('berat', '<small class="text-danger pl-1">', '</small>'); ?>

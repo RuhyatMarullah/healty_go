@@ -22,7 +22,7 @@
                 </div>
                 <div class="form-group">
                     <label for="usia">Usia</label>
-                    <input type="number" required id="usia" class="form-control" name="usia" value="">
+                    <input type="text" required id="usia" class="form-control" name="usia" value="">
                 </div>
             </div>
             <div class="col-md-6">

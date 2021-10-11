@@ -69,11 +69,11 @@
         </li>
         <li class="nav-item" id="meningkatkan_imun">
             <a class="nav-link pb-0" href="<?= base_url('imun'); ?>">
-                <i class="fas fa-fw fa-utensils"></i>
+                <i class="fas fa-user-md"></i>
                 <span>Meningkatkan Imun</span>
             </a>
         </li>
-        <li class="nav-item" id="profile">
+        <li class="nav-item" id="tentang_kami">
             <a class="nav-link pb-0" href="<?= base_url('user'); ?>">
                 <i class="fas fa-fw fa-info-circle"></i>
                 <span>Tentang kami</span>

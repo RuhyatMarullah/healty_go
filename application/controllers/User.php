@@ -6,6 +6,8 @@ class User extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->library('form_validation');
+        $this->load->library('session');
         if (!$this->session->userdata('id')) {
             redirect('login');
         }
@@ -46,40 +48,23 @@ class User extends CI_Controller
         $img = $_FILES['img']['name'];
 
         if ($img) {
+
             $config['upload_path'] = './assets/img/profile/';
-            $config['allowed_types'] = 'gif|jpg|png';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg';
             $config['max_size']     = '10000';
 
-
             $this->load->library('upload', $config);
+            // $this->upload->initialize($config);
 
-            if ($this->session->userdata('status') == 'admin') {
-                if ($this->upload->do_upload('img')) {
-                    $new_img = $this->upload->data('file_name');
-                    $this->db->set('img', $new_img);
-                    $this->db->where('kd_admin', $this->session->userdata('kode_user'));
-                    $this->db->update('admin');
-                } else {
-                    echo $this->upload->display_errors();
-                }
-            } elseif ($this->session->userdata('status') == 'dokter') {
-                if ($this->upload->do_upload('img')) {
-                    $new_img = $this->upload->data('file_name');
-                    $this->db->set('img', $new_img);
-                    $this->db->where('kd_dokter', $this->session->userdata('kode_user'));
-                    $this->db->update('dokter');
-                } else {
-                    echo $this->upload->display_errors();
-                }
-            } elseif ($this->session->userdata('status') == 'pasien') {
-                if ($this->upload->do_upload('img')) {
-                    $new_img = $this->upload->data('file_name');
-                    $this->db->set('img', $new_img);
-                    $this->db->where('kd_pasien', $this->session->userdata('kode_user'));
-                    $this->db->update('admin');
-                } else {
-                    echo $this->upload->display_errors();
-                }
+
+            if ($this->upload->do_upload('img')) {
+                $new_img = $this->upload->data('file_name');
+                $this->db->set('img', $new_img);
+                $this->db->where('id', $this->session->userdata('id'));
+                $this->db->update('user');
+            } else {
+                echo $this->upload->display_errors();
+                exit;
             }
         } else {
             redirect('user');

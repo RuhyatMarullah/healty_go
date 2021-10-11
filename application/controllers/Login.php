@@ -36,7 +36,11 @@ class Login extends CI_Controller
                     'role' => $user['role']
                 ];
                 $this->session->set_userdata($data);
-                redirect('indexmasatubuh');
+                if ($user['role'] == 2) {
+                    redirect('dashboard');
+                } elseif ($user['role'] == 1) {
+                    redirect('user');
+                }
             } else {
                 $this->session->set_flashdata('pesan_login', '<div style="color:red;" role="alert">Password Salah!</div>');
                 redirect('login');

@@ -35,7 +35,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="usia">Usia</label>
-                    <input required type="number" id="usia" class="form-control <?php if (form_error('usia')) { ?>
+                    <input required type="text" id="usia" class="form-control <?php if (form_error('usia')) { ?>
                         is-invalid
                     <?php  } ?>" name="usia" value="<?= set_value('usia'); ?>">
                     <?= form_error('usia', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -44,7 +44,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="berat">Berat Badan</label>
-                    <input required type="number" id="berat" class="form-control <?php if (form_error('berat')) { ?>
+                    <input required type="text" id="berat" class="form-control <?php if (form_error('berat')) { ?>
                         is-invalid
                     <?php  } ?>" name="berat" value="<?= set_value('berat'); ?>">
                     <?= form_error('berat', '<small class="text-danger pl-1">', '</small>'); ?>
@@ -53,7 +53,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="tinggi">Tinggi Badan</label>
-                    <input required type="number" id="tinggi" class="form-control <?php if (form_error('tinggi')) { ?>
+                    <input required type="text" id="tinggi" class="form-control <?php if (form_error('tinggi')) { ?>
                         is-invalid
                     <?php  } ?>" name="tinggi" value="<?= set_value('tinggi'); ?>">
                     <?= form_error('tinggi', '<small class="text-danger pl-1">', '</small>'); ?>
