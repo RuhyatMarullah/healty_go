@@ -69,6 +69,8 @@ class Kebutuhanzatgizi extends CI_Controller
         $data['karbohidrat'] = $karbohidrat / 4;
         $data['kalori'] = $hasil_bmr;
 
+
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar');

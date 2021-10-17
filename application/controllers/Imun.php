@@ -131,15 +131,15 @@ class Imun extends CI_Controller
         $data['imt'] = $imt;
 
         if ($individu['id_jenis_kelamin'] == 1) {
-            $berat_badan = 13.7 * $this->input->post('berat_badan', true);
-            $tinggi_badan = 5 * $this->input->post('tinggi_badan', true);
-            $usia = 6.8 * $this->input->post('usia', true);
+            $berat_badan = 13.7 * $individu['berat'];
+            $tinggi_badan = 5 * $individu['tinggi'];
+            $usia = 6.8 * $individu['usia'];
 
             $bmr =  66 + $berat_badan + $tinggi_badan - $usia;
         } elseif ($individu['id_jenis_kelamin'] == 2) {
-            $berat_badan = 9.6 * $this->input->post('berat_badan', true);
-            $tinggi_badan = 1.8 * $this->input->post('tinggi_badan', true);
-            $usia = 4.7 * $this->input->post('usia', true);
+            $berat_badan = 9.6 *  $individu['berat'];
+            $tinggi_badan = 1.8 * $individu['tinggi'];
+            $usia = 4.7 * $individu['usia'];
 
             $bmr =  65 + $berat_badan + $tinggi_badan - $usia;
         }
@@ -164,6 +164,7 @@ class Imun extends CI_Controller
         $data['lemak'] = $lemak / 9;
         $data['karbohidrat'] = $karbohidrat / 4;
         $data['kalori'] = $hasil_bmr;
+
 
         $data['p_protein'] = $data_nutrisi['protein'] / $data['protein'] * 100;
         $data['p_lemak'] =  $data_nutrisi['lemak'] / $data['protein']  * 100;
