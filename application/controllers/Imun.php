@@ -207,4 +207,17 @@ class Imun extends CI_Controller
         $this->load->view('imun/detail_nutrisi', $data);
         $this->load->view('templates/footer');
     }
+
+
+    public function delete_individu($id)
+    {
+        $this->db->delete('individu', ['id' => $id]);
+        redirect('imun');
+    }
+
+    public function delete_pangan($id, $id_individu)
+    {
+        $this->db->delete('pangan', ['id' => $id]);
+        redirect('imun/detail_individu/' . $id_individu);
+    }
 }

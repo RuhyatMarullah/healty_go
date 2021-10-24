@@ -51,7 +51,7 @@ class Individu_model extends CI_Model
     {
         $array = array('id_individu' => $id_individu, 'tanggal' => $tgl);
         $this->db->from('pangan');
-        $this->db->select('pangan.*,makan.*,jenis_makan.nama as waktu');
+        $this->db->select('pangan.*,makan.nama as nama,jenis_makan.nama as waktu');
         $this->db->join('makan', 'makan.id = pangan.id_makan');
         $this->db->join('jenis_makan', 'jenis_makan.id = makan.id_jenis_makan');
         $this->db->where($array);

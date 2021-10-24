@@ -73,12 +73,12 @@
                 <span>Meningkatkan Imun</span>
             </a>
         </li>
-        <li class="nav-item" id="tentang_kami">
+        <!-- <li class="nav-item" id="tentang_kami">
             <a class="nav-link pb-0" href="<?= base_url('user'); ?>">
                 <i class="fas fa-fw fa-info-circle"></i>
                 <span>Tentang kami</span>
             </a>
-        </li>
+        </li> -->
 
 
         <hr class="sidebar-divider">

@@ -63,7 +63,7 @@
                 <div class="form-group">
                     <label for="aktivitas">Aktivitas</label>
                     <select class="form-control" id="aktivitas" required name="aktivitas">
-                        <option value="">-- Jenis Kelamin --</option>
+                        <option value="">-- Select Aktivitas --</option>
                         <?php foreach ($aktivitas as $row) : ?>
                             <?php if ($row['id'] == set_value('aktivitas')) : ?>
                                 <option value="<?= $row['id']; ?>" selected><?= $row['nama']; ?></option>
@@ -76,7 +76,7 @@
             </div>
             <div class="col-md-12 text-center">
                 <button type="submit" class="btn btn-primary" name="tambah">Save</button>
-                <a href="<?= base_url('master/jenismakanan'); ?>" type="button" class="btn btn-secondary">Cancel</a>
+                <a href="<?= base_url('imun'); ?>" type="button" class="btn btn-secondary">Cancel</a>
             </div>
         </div>
     </form>

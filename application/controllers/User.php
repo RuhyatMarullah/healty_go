@@ -17,8 +17,9 @@ class User extends CI_Controller
         $data['judul'] = 'My Profile';
         $data['cek'] = 'profile';
 
-
-        $data['user'] = $this->db->get_where('user', ['id' => $this->session->userdata('id')])->row_array();
+        $this->db->select('user.*,jenis_kelamin.nama as jenis_kelamin');
+        $this->db->join('jenis_kelamin', 'jenis_kelamin.id = user.id_jenis_kelamin');
+        $data['user'] = $this->db->get_where('user', ['user.id' => $this->session->userdata('id')])->row_array();
 
 
 

@@ -2,7 +2,7 @@
 <div class="container-fluid">
 
     <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-7 col-md-6 mb-4">
+    <div class="col-xl-10 col-md-10 mb-4">
         <h1 class="h3 mb-4 text-gray-700"><?= $judul; ?></h1>
         <?= $this->session->flashdata('message'); ?>
         <div class="card border-left-primary shadow h-100 py-2">
@@ -20,6 +20,46 @@
                                     </th>
                                     <td>
                                         : <?= $user['nama']; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">
+                                        Jenis Kelamin
+                                    </th>
+                                    <td>
+                                        : <?= $user['jenis_kelamin']; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">
+                                        Tempat Lahir
+                                    </th>
+                                    <td>
+                                        : <?= $user['tempat_lahir']; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">
+                                        Tanggal Lahir
+                                    </th>
+                                    <td>
+                                        : <?= $user['tgl_lahir']; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">
+                                        No HP
+                                    </th>
+                                    <td>
+                                        : <?= $user['no_hp']; ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="30%">
+                                        Alamat
+                                    </th>
+                                    <td>
+                                        : <?= $user['alamat']; ?>
                                     </td>
                                 </tr>
                                 <tr>

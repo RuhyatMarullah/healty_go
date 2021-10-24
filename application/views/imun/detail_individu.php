@@ -1,13 +1,18 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
+        <div class="col-md-6">
             <button data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-icon-split">
                 <span class="icon text-white-200">
                     <i class="fas fa-plus"></i>
                 </span>
                 <span class="text">Tambah Pangan</span>
             </button>
+        </div>
+        <div class="col-md-6 text-right">
+            <a type="button" href="<?= base_url('imun'); ?>" class="btn btn-success btn-icon-split">
+                <span class="text">Kembali</span>
+            </a>
         </div>
     </div>
 </div>
@@ -162,6 +167,7 @@
                                 <th>Waktu</th>
                                 <th>Makanan</th>
                                 <th>Tanggal</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody id="body_tail_pangan">
@@ -220,6 +226,14 @@
                             <td>${value.waktu}</td>
                             <td>${value.nama}</td>
                             <td>${value.tanggal}</td>
+                            <td>
+                            <a href="<?= base_url(); ?>imun/delete_pangan/${value.id}/<?= $individu['id']; ?>" class="btn-sm btn-danger btn-icon-split">
+                                <span class="icon text-white-200">
+                                    <i class="fas fa-info"></i>
+                                </span>
+                                <span class="text">Delete</span>
+                            </a>
+                            </td>
                         </tr>
                     `
                 });

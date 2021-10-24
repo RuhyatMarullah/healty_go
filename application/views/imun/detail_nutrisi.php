@@ -1,13 +1,10 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
-            <button data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-icon-split">
-                <span class="icon text-white-200">
-                    <i class="fas fa-plus"></i>
-                </span>
-                <span class="text">Tambah Pangan</span>
-            </button>
+        <div class="col text-right">
+            <a type="button" href="<?= base_url(); ?>imun/detail_individu/<?= $individu['id']; ?>" class="btn btn-success btn-icon-split">
+                <span class="text">Kembali</span>
+            </a>
         </div>
     </div>
 </div>

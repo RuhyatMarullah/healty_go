@@ -6,6 +6,7 @@ class Login extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('Individu_model');
         $this->load->model('User_model');
         $this->load->library('form_validation');
     }
@@ -14,8 +15,9 @@ class Login extends CI_Controller
         if ($this->session->userdata('id')) {
             redirect('indexmasatubuh');
         }
+        $data['jenis_kelamin'] = $this->Individu_model->getJenisKelamin();
 
-        $this->load->view('login/index');
+        $this->load->view('login/index', $data);
     }
 
     public function login()

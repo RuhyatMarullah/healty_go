@@ -20,7 +20,12 @@ class User_model extends CI_Model
             'role' => 2,
             'email' => $this->input->post('email', true),
             'password' => password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
-            'img' => 'default.jpg'
+            'img' => 'default.jpg',
+            'id_jenis_kelamin' => $this->input->post('jenis_kelamin', true),
+            'alamat' => $this->input->post('alamat', true),
+            'no_hp' => $this->input->post('no_hp', true),
+            'tempat_lahir' => $this->input->post('tempat_lahir', true),
+            'tgl_lahir' => $this->input->post('tgl_lahir', true),
         );
 
         $this->db->insert('user', $user);

@@ -48,6 +48,12 @@
                                                 </span>
                                                 <span class="text">Detail</span>
                                             </a>
+                                            <a href="<?= base_url(); ?>imun/delete_individu/<?= $row['id']; ?>" class="btn-sm btn-danger btn-icon-split">
+                                                <span class="icon text-white-200">
+                                                    <i class="fas fa-info"></i>
+                                                </span>
+                                                <span class="text">Delete</span>
+                                            </a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
